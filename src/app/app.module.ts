@@ -8,18 +8,22 @@ import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
+import { AccordionModule } from './routes/accordion/accordion.module';
+import { TablesComponent } from './routes/tables/tables.component';
+import { TablesModule } from './routes/tables/tables.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,        
   ],
-  imports: [
-    
+  imports: [       
     BrowserAnimationsModule,
     PoModule,
     RouterModule.forRoot([]),
     PoTemplatesModule,
     AppRoutingModule,
+    AccordionModule,
+    TablesModule,
     RouterModule,
     HttpClientModule,   
   ],

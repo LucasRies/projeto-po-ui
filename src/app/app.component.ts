@@ -12,6 +12,8 @@ export class AppComponent {
 
   constructor(private router: Router) { }
   readonly menus: Array<PoMenuItem> = [
+    { label: 'Home', action: () => this.router.navigate(['/']) },
     { label: 'Accordion', action: () => this.router.navigate(['accordion']) },
+    { label: 'Tables', action: () => this.router.navigate(['tables']) },
   ];
 }
